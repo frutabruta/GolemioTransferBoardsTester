@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += xml network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,10 +10,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    golemio/connectiongolemio.cpp \
+    golemio/golemio.cpp \
+    golemio/stopgolemio.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    golemio/connectiongolemio.h \
+    golemio/golemio.h \
+    golemio/stopgolemio.h \
     mainwindow.h
 
 FORMS += \
