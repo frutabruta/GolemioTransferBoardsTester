@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>917</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,26 +17,109 @@
    <string>GolemioTransferBoardsTester</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_getData">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>250</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>start</string>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="2">
+     <widget class="QPushButton" name="pushButton_saveConfig">
+      <property name="text">
+       <string>uložit konfiguraci</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLineEdit" name="lineEdit_parameters"/>
+    </item>
+    <item row="5" column="2">
+     <widget class="QCheckBox" name="checkBox_autoUpdate">
+      <property name="text">
+       <string>automatický
+update</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButton_getData">
+      <property name="text">
+       <string>Ruční
+update</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="7" colspan="2">
+     <widget class="QTableWidget" name="tableWidget_departures">
+      <column>
+       <property name="text">
+        <string>line</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>destination</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>minutes</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>platform</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>subst. CZ</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>subst. EN</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>icons</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="2">
+     <widget class="QPushButton" name="pushButton_setParameters">
+      <property name="text">
+       <string>Nastavit parametry</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Interval updatu
+(vteřiny)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_CountDown">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_timeout"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>917</width>
      <height>21</height>
     </rect>
    </property>

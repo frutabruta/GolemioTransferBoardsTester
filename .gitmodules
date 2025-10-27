@@ -1,0 +1,3 @@
+[submodule "GolemioClient"]
+	path = GolemioClient
+	url = https://github.com/frutabruta/GolemioClient

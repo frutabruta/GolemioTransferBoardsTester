@@ -10,16 +10,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    golemio/connectiongolemio.cpp \
-    golemio/golemio.cpp \
-    golemio/stopgolemio.cpp \
+    GolemioClient/connectiongolemio.cpp \
+    GolemioClient/connectiongolemiov4.cpp \
+    GolemioClient/golemio.cpp \
+    GolemioClient/golemioresultv4.cpp \
+    GolemioClient/golemiov4.cpp \
+    GolemioClient/stopgolemio.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    golemio/connectiongolemio.h \
-    golemio/golemio.h \
-    golemio/stopgolemio.h \
+    GolemioClient/connectiongolemio.h \
+    GolemioClient/connectiongolemiov4.h \
+    GolemioClient/golemio.h \
+    GolemioClient/golemioresultv4.h \
+    GolemioClient/golemiov4.h \
+    GolemioClient/stopgolemio.h \
     mainwindow.h
 
 FORMS += \
